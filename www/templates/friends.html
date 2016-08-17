@@ -1,0 +1,11 @@
+<ion-view title="Friends" id="page2" style="background-color:#6592CA;">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="friends-list1">
+            <ion-item ng-repeat="y in $root.profiles" class="item-avatar " id="friends-list-item1" ui-sref="tabsController.profile({ id: y.id})">
+                <img src="img/profiles/{{y.id}}.jpg">   
+                <h2>{{y.name}}</h2>
+            </ion-item>
+        </ion-list>
+        <!-- <button style="display: none;" class="" ng-click="refresh()">Refresh</button> -->
+    </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+<!-- <ion-view title="Inbox" id="page4" style="background-color:#6592CA;">
+    <ion-content padding="true" class="has-header">
+        <ion-list id="inbox-list2">
+            <ion-item class="item-divider inboxHeader" id="inbox-list-item-divider1">Important</ion-item>
+            <ion-item id="inbox-list-item4" ui-sref="tabsController.theMessage">Jom Turun Makan
+                <span class="item-note">mamak nilai</span>
+            </ion-item>
+            <ion-item id="inbox-list-item5" ui-sref="tabsController.theMessage">Hutang Bayarlah
+                <span class="item-note">da 2 minggu da we..</span>
+            </ion-item>
+        </ion-list>
+        <div class="spacer" style="width: 300px; height: 41px;"></div>
+        <ion-list id="inbox-list3">
+            <ion-item class="item-divider inboxHeader" id="inbox-list-item-divider2">Others</ion-item>
+            <ion-item id="inbox-list-item6" ui-sref="tabsController.theMessage">Spam
+                <span class="item-note">Hey i saw a picture of yo..</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view> -->
+<ion-view title="Connect" id="page2" style="background-color:#6592CA;">
+    <ion-content padding="true" class="has-header">
+        <ion-list can-swipe="true" id="friends-list1">
+            <ion-item ng-repeat="y in $root.users" class="item-avatar " id="friends-list-item1">
+                <img src="img/profiles/{{y.id}}.jpg">
+                <h2>{{y.name}}</h2>
+
+                <ion-option-button class="button-assertive icon ion-ios-personadd-outline" ng-click="add(y.id)"></ion-option-button>
+            </ion-item>
+        </ion-list>
+        <!-- <button style="display: none;" class="" ng-click="refresh()">Refresh</button> -->
+    </ion-content>
+</ion-view>

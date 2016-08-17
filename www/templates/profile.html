@@ -1,0 +1,13 @@
+<ion-view title="{{data.name}}" id="page5" style="background-color:#6592CA;">
+    <ion-content padding="true" class="has-header">
+        <div style="margin: 0px; line-height: 250px; text-align: center; background-color: rgb(232, 235, 239);">
+            <img src="img/profiles/{{data.id}}.jpg" height="auto" width="100%" style="display:block; margin-left:auto; margin-right:auto">
+        </div>
+        <ion-list id="profile-list5">
+            <ion-item id="profile-list-item15">{{data.phone}}</ion-item>
+            <ion-item id="profile-list-item16">{{data.email}}</ion-item>
+        </ion-list>
+        <a ui-sref="tabsController.cr8Message" id="profile-button5" class=" button button-calm  button-block ">Message!</a>
+        <a ng-click="remove(data.id)" id="profile-button6" class=" button button-assertive button-block ">Remove?!</a>
+    </ion-content>
+</ion-view>
